@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <title>Early Detection of Chronic Kidney</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="home-page" id="home-page">
+<div class="home-title"> <h1>Early Detection of Chronic Kidney Disease</h1><h3>Machine Learning web app built with Flask</h3>
+<button class="home-btn" id="home-btn">Start Prediction</button></div>
+        </div>
+        <div class="form-details" id="form-details">
+                 <div class="form-heading">
+                      <h1>Early Detection of Chronic Kidney Disease</h1><h3>Machine Learning web app built with Flask</h3>
+                 </div>
+                 <br/>
+                 <br/>
+                 
+                 <div class="form-value">
+                    <h3>Enter the Details to Predict:</h3>
+                      <div>
+                           <label for="name">Blood Urea</label>
+                           <input type="number" id="blood-urea" name="blood_urea" placeholder="Blood Urea Level">
+                      </div>
+
+                      <div>
+                           <label for="name">Blood Glucose Random</label>
+                           <input type="number" id="glucose" name="blood_glucose_random" placeholder="Blood Glucose Level Random">
+                      </div>
+
+                      <div>
+                           <label for="select">Select Anemia</label>
+                           <select id = "anemia">
+                                <option value = "yes"> yes</option>
+                                <option value = "no">no </option>
+                           </select>
+                      </div>
+
+                      <div>
+                           <label for="select">Select Coronary Artery Disease</label>
+                           <select id = "coronary-disease">
+                                <option value = "yes"> yes</option>
+                                <option value = "no">no </option>
+                           </select>
+                      </div>
+
+                      <div>
+                           <label for="select">Select Pus Cell</label>
+                           <select id = "pus_cell">
+                                <option value = "yes"> yes</option>
+                                <option value = "no">no </option>
+                           </select>
+                      </div>
+
+                      <div>
+                           <label for="select">Select Red Blood Cell</label>
+                           <select id = "rbc">
+                                <option value = "yes"> yes</option>
+                                <option value = "no">no </option>
+                           </select>
+                      </div>
+                      
+    <div>
+                           <label for="select">Select Diabetics Mellitus</label>
+                           <select id = "diabetics">
+                                <option value = "yes"> yes</option>
+                                <option value = "no">no </option>
+                           </select>
+                      </div>
+
+                      <div>
+                           <label for="select">Select Pedal Edema</label>
+                           <select id = "pedal_edema">
+                                <option value = "yes"> yes</option>
+                                <option value = "no">no </option>
+                           </select>
+                      </div>
+                      <div >
+                           <button type="submit" id="submit" class="submit-btn">Predict</button>
+
+                      </div>
+   </div>
+    </div>
+    <div id="affect-page" class="affect-page">
+        <h2>The Person was affected by Chronic Disease</h2>
+        <img  src="./assets/affected.png"
+            width="500" height="500">
+            <button class="home-btn" id="affect-btn">Home</button></div>
+    </div>
+    <div id="notAffect-page" class="notAffect-page">
+        <h2>The Person was not affected by Chronic Disease</h2>
+        <img  src="./assets/notAffected.png"
+            width="500" height="500">
+            <button class="home-btn" id="notAffect-btn">Home</button></div>
+    </div>
+        <script src="index.js"></script>
+    </body>
+</html>
